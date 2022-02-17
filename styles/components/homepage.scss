@@ -1,0 +1,55 @@
+@import './../utils/variable';
+
+.carousel-wrap {
+  &__item {
+    background-color: $color-primary;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .ant-image {
+    width: 100%;
+
+    img {
+      object-fit: contain;
+    }
+  }
+}
+
+.event-list {
+  margin-top: 50px;
+
+  &__title-wrap {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+
+    .event-list__title {
+      margin: 0 20px;
+      color: $color-primary !important;
+    }
+  }
+
+  .event-list-row {
+    margin-top: 50px;
+  }
+
+  &__item {
+    width: 100%;
+    cursor: pointer;
+
+    :hover {
+      opacity: 0.9;
+    }
+  }
+
+  .see-more {
+    margin-top: 50px;
+  }
+
+  .space-title {
+    margin: 0;
+    border-top: 2px solid rgba(0, 0, 0, 0.5);
+  }
+}

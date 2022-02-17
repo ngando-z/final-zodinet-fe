@@ -1,0 +1,129 @@
+@import './../utils/variable';
+.header {
+  width: 100%;
+  background: $color-primary;
+
+  .header__logo {
+    cursor: pointer;
+    width: 150px;
+  }
+
+  .header__user {
+    .ant-avatar {
+      margin-right: 10px;
+    }
+  }
+
+  &-box {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  &__btn-create {
+    background-color: #fff;
+    color: $color-primary;
+    font-size: 2rem;
+    text-align: center;
+
+    &:hover {
+      color: $color-primary;
+      opacity: 0.8;
+    }
+  }
+
+  &__search {
+    display: inline-block;
+    width: 30%;
+    outline: none;
+    border: none;
+    padding: 10px 10px;
+
+    & button,
+    & button:visited {
+      background-color: $color-primary-dark-1;
+      outline: none;
+      border: none;
+    }
+
+    & button:hover,
+    & button:active,
+    & button:focus {
+      background-color: $color-primary-dark-2;
+      outline: none;
+      border: none;
+    }
+  }
+
+  &__label {
+    font-size: 1.8rem;
+    background-color: #fff;
+  }
+
+  &__navigation {
+    justify-content: end;
+    flex-grow: 1;
+    background-color: $color-primary;
+    color: $color-white;
+    font-size: 2rem;
+    border: none;
+
+    & li:hover {
+      color: $color-primary-light-2;
+      outline: none;
+      border: none;
+    }
+  }
+
+  &__icon svg {
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-align: center;
+    color: $color-white;
+    transform: translateY(3px);
+  }
+
+  .ant-menu-item {
+    color: $color-white !important;
+
+    &:hover {
+      opacity: 0.8 !important;
+    }
+
+    &:after {
+      border: none !important;
+    }
+  }
+}
+
+.ant-row-rtl .logo {
+  float: right;
+  margin: 16px 0 16px 24px;
+}
+
+.ant-btn-primary {
+  color: #fff;
+  border-color: $color-primary;
+  background-color: $color-primary;
+  text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
+  -webkit-box-shadow: 0 2px 0 rgb(0 0 0 / 5%);
+  box-shadow: 0 2px 0 rgb(0 0 0 / 5%);
+}
+.group__gender {
+  display: flex;
+  justify-content: space-between;
+}
+
+.event-category {
+  min-width: 300px !important;
+
+  &__menu {
+    height: 100%;
+    border-right: 0;
+  }
+}
+
+.event-category-layout {
+  padding: 0 24px 24px;
+  position: relative;
+}

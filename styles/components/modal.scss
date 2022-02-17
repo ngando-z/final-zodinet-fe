@@ -1,0 +1,76 @@
+@import '../utils/variable';
+
+.modal {
+  &__btn {
+    text-transform: uppercase;
+    font-weight: 700;
+
+    &--submit {
+      background-color: $color-primary;
+      color: $color-white;
+
+      &:visited {
+        background-color: $color-primary;
+        color: $color-white;
+        outline: none;
+        border: none;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: $color-primary;
+        color: $color-white;
+        outline: none;
+        border: none;
+      }
+    }
+
+    &--cancel {
+      background-color: #ff4d4f;
+      color: $color-white;
+
+      &:visited {
+        background-color: #ff4d4f;
+        color: $color-white;
+        outline: none;
+        border: none;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: #ff4d4f;
+        color: $color-white;
+        outline: none;
+        border: none;
+      }
+    }
+  }
+
+  &-bank {
+    &__contain {
+      width: 60rem !important;
+    }
+
+    &__message {
+      font-size: 1.8rem;
+      font-weight: 400;
+    }
+
+    &__label {
+      & .ant-form-item-label {
+        text-align: left;
+      }
+    }
+  }
+}
+
+.ant-modal-title {
+  text-align: center;
+  color: $color-primary;
+  font-size: 3.2rem;
+  font-weight: bold;
+  letter-spacing: 1.3;
+  text-transform: uppercase;
+}

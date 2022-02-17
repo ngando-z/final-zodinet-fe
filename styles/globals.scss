@@ -1,0 +1,39 @@
+//Layout
+@import './layout/main';
+
+//Component
+@import './Home/style.scss';
+
+@import './components/form.scss';
+@import './components/login.scss';
+@import './components/homepage.scss';
+@import './components/modal.scss';
+@import './components/event-detail.scss';
+@import './components/event-list.scss';
+@import './components/footer.scss';
+@import './components/order-item.scss';
+@import './components/checkout.scss';
+@import './components/admin.scss';
+@import './components/profile.scss';
+
+@import './utils/utils.scss';
+@import './utils/variable.scss';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  margin: 0 auto;
+  font-size: 62.5%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

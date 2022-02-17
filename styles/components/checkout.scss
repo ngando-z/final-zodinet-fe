@@ -1,0 +1,84 @@
+@import './../utils/variable';
+
+.checkout {
+  padding-top: 100px;
+  padding-bottom: 320px;
+
+  .information-buyer {
+    &__header {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      font-size: 2rem;
+      margin-bottom: 10px;
+
+      div {
+        margin-left: 6px;
+      }
+    }
+
+    .payment-method {
+      width: 100%;
+      &__group {
+        width: 100%;
+      }
+
+      &__item {
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .information-checkout {
+    padding: 20px;
+    background-color: $color-white;
+
+    .information-checkout__event__description {
+      font-size: 1.2rem;
+      color: $color-text-dark;
+      letter-spacing: 0.5px;
+    }
+
+    &__event {
+      font-size: 1.4rem;
+      width: 100%;
+
+      &__wrap {
+        width: 100%;
+      }
+
+      &__ticket {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    .information-checkout__event__total {
+      width: 100%;
+      font-size: 1.8rem;
+      font-weight: bold;
+      span {
+        width: 100%;
+        text-align: right;
+      }
+    }
+
+    &__term {
+      margin: 20px 0;
+
+      a {
+        color: #40a9ff;
+      }
+
+      span {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .ant-divider-horizontal {
+    margin: 12px 0;
+  }
+}
